@@ -1,0 +1,199 @@
+/**  
+ * Stylesheet: biker-travel  
+ * Description: Stylesheet for jQuery - Praxisworkshop - video2brain  
+ * Version: -  
+ * Author: Michael Ruettger  
+ * Author URI: http://www.ruettger-mediendesign.de/  
+*/
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body{
+    background: #fff;
+    color: #666;
+    font: 90% Verdana, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#header{
+    background: #d9e8da;
+}
+
+/* Main-Navigation */
+
+#main_nav{
+    background: #203c22;
+    border-bottom: 2px solid #aaa;
+    color: #fff;
+}
+
+#main_nav ul{
+    list-style: none;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 1px 0 5px 1px;
+    width: 800px;
+}
+
+#main_nav ul li{
+    float: left;
+    list-style: none;
+}
+
+#main_nav ul li a{
+    background: transparent;
+    color: #d9e8da;
+    display: block;
+    float: left;
+    font-size: .9em;
+    font-weight: bold;
+    padding: 4px 10px;
+    text-decoration: none;
+}
+
+#main_nav ul li a:focus,#main_nav ul li a:hover, #main_nav ul li a:active{
+    color: #204C00;
+}
+
+#main_nav ul li.current_menue_item a{
+    background: transparent;
+    color: #d9e8da;
+    text-decoration: none;
+}
+
+/* END - Main-Navigation */
+
+/* Animation Main-Navigation */
+#main_nav ul {
+    position: relative; 
+}
+
+#main_nav ul li a{
+    position: relative;
+    z-index: 100;
+}
+
+#main_nav ul div.ahover {
+    position: absolute;
+    z-index: 99;
+    border: 1px solid #d9e8da; 
+    background: #d9e8da;
+}
+/* END - Animation Main-Navigation */
+
+
+#content_wrapper {
+    margin: 0 auto;
+    text-align: left;
+    width: 800px;
+}
+
+/* Left Menue */
+
+#leftmenue {
+    float: left;
+    padding-left: 10px;
+    overflow: hidden;
+    width: 180px;
+}
+
+#leftmenue a{
+    display: block;
+    font-size: .85em;
+    padding: 2.5px 0;
+}
+
+#leftmenue h2{
+    margin: 2.0em 0 .5em 0;
+    padding: 0 0 .3em 0;
+}
+
+#leftmenue ul li{
+    list-style: none;
+}
+
+#leftmenue ul li ul li ul li{
+    padding-left: 20px;
+}
+
+/* END - Left Menue */
+
+#content{
+    border-right: #203c22 1px solid;
+    float: left;
+    margin: 2em 0 0 0;
+    width: 600px;
+}
+
+a, a:link{
+    color: #203c22;
+    outline: none;
+    text-decoration: none;
+}
+
+a:focus, a:hover, a:active{
+    color: #000;
+    text-decoration: underline;
+}
+
+h1, h2{
+    color: #203c22;
+    font-size: 1em;
+}
+
+.entry{
+    float: left;
+    overflow: hidden;
+    padding-bottom: 10em;
+    width: 550px;
+}
+
+.entry p{
+    font-size: .85em;
+    line-height: 1.5;
+    margin: 1em 0;
+}
+
+form {
+	width:500px;
+	height: auto;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	box-sizing: border-box;
+}
+
+form input {
+	margin: 10% 10% 0 10%;
+	width: 70%;
+	padding: 5%;
+	display: block;
+	border: none;
+	border-bottom: 1px solid #AAAAAA;
+}
+
+input:focus {
+	outline:none;
+}
+
+input:focus:valid {
+	color: #14EE00;
+	border-color: #14EE00;
+}
+
+input:focus:invalid {
+	color: #FF0000;
+	border-color: #FF0000;
+}
+#frm_send {
+	background: #AAAAAA;
+}
+#frm_send:hover {
+	background: #BBBBBB;
+	color: #fff;
+}

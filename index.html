@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Schottland mit dem Motorrad</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+    
+    <link rel="stylesheet" href="nivo-slider/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+    
+    <script src="scripts/jquery-1.11.1.min.js"></script>
+    <script src="nivo-slider/jquery.nivo.slider.js"></script>
+    <script src="scripts/jquery.ahover.js"></script>
+    
+    <script type="text/javascript">  
+        $(document).ready(function() {
+            $("#main_nav ul li").ahover({toggleEffect: "height", moveSpeed: 200, toggleSpeed: 200});
+            
+            var $expand = $("#leftmenue li.categories li");
+            
+            $expand.children("ul").css("display", "none");
+            $expand.filter(":has(ul)").children(":first-child").append(" &raquo;").click(function() {
+                $(this).next().slideToggle();
+                $(this).parent().siblings().children("ul:visible").slideUp();
+                return false; 
+            });
+
+        });
+        
+        $(window).load(function() {
+            $('#slider').nivoSlider();
+        });   
+    </script>
+    
+  </head>
+  <body>
+    <div id="header">    
+        <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="images/slider01.jpg" data-thumb="images/slider01.jpg" alt="" />                
+                <img src="images/slider02.jpg" data-thumb="images/slider02.jpg" alt="" />
+                <img src="images/slider03.jpg" data-thumb="images/slider03.jpg" alt="" />
+                <img src="images/slider04.jpg" data-thumb="images/slider04.jpg" alt="" />
+            </div>
+        </div> 
+    </div>
+    <div id="main_nav">
+        <ul>
+            <li class="menue_item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="menue_item">
+                <a href="http://goo.gl/ziok9C">Anreise</a>
+            </li>
+            <li class="menue_item">
+                <a href="http://goo.gl/tzuYDB">Fähren</a>
+            </li>
+            <li class="menue_item">
+                <a href="http://goo.gl/2ozH7i">Schottland</a>
+            </li>
+            <li class="menue_item">
+                <a href="impressum.html">Impressum</a>
+            </li>
+			<li class="menue_item">
+                <a href="formular.html">Newsletter</a>
+            </li>
+        </ul>
+    </div>
+    <div id="content_wrapper">
+        <div id="leftmenue">
+            <ul>
+                <li class="categories">
+                    <h2>Wissenswertes</h2>
+                    <ul>
+                        <li class="cat-item"><a href="http://goo.gl/RjlXCg">Bed &amp; Breakfast</a></li>
+                        <li class="cat-item"><a href="#">Edinburgh</a>
+                            <ul class="children">
+                                <li class="cat-item"><a href="http://www.edinburghcastle.gov.uk/">castle</a></li>
+                                <li class="cat-item"><a href="http://goo.gl/5RD2Ag">royal mile</a></li>
+                                <li class="cat-item"><a href="http://www.scottish.parliament.uk/">parlament</a></li>
+                            </ul>
+                        </li>
+                        <li class="cat-item"><a href="#">Schottland</a>
+                            <ul class="children">
+                                <li class="cat-item"><a href="http://de.wikipedia.org/wiki/Scottish_Borders">Borders</a></li>
+                                <li class="cat-item"><a href="http://en.wikipedia.org/wiki/Scottish_Lowlands">Lowlands</a></li>
+                                <li class="cat-item"><a href="http://de.wikipedia.org/wiki/Highlands">Highlands</a></li>
+                                <li class="cat-item"><a href="http://goo.gl/Vt2SZO">Islays</a></li>
+                            </ul>
+                        </li>
+                        <li class="cat-item"><a href="#">Schottische Küche</a>
+                            <ul class="children">
+                                <li class="cat-item"><a href="http://de.wikipedia.org/wiki/Haggis">Haggis</a></li>
+                                <li class="cat-item"><a href="http://goo.gl/VXAzCK">Grouse</a></li>
+                                <li class="cat-item"><a href="http://goo.gl/mM1Jjk">Kilmeny Kail</a></li>
+                                <li class="cat-item"><a href="http://goo.gl/Cfih9T">Gammon</a></li>
+                                <li class="cat-item"><a href="http://goo.gl/4tkYmr">Sheperd's Pie</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <div class="entry">
+                <h2>Schottland mit dem Motorrad</h2>
+                <p>Mit die schönste Möglichkeit, Schottland zu bereisen, ist mit dem Motorrad. Außer vielleicht mit
+                dem Rucksack und zu Fuß kommt man kaum näher an Land und Leute heran. Hinzu kommt, dass die
+                meisten Schotten Motorräder mögen und somit schnell ein Gesprächsthema gefunden werden kann.</p>
+                <p>Einer der schönsten schottischen Sprüche lautet: "It never rains in Scotland, we mostly have liquid sunshine!"
+                An dem Ausspruch ist mehr dran, als man zunächst vermuten mag. Die Niederschlagsmenge ist nicht höher als bei uns,
+                jedoch regnet es in der Regel heftiger, hört dafür aber schneller wieder auf. So hört man oft, wenn man danach fragt,
+                wann es aufhört zu regnen die Antwort: "Wait five minutes, please!</p>
+                <p>Vom oft betonten schottischen Geiz kann nicht die Rede sein - im Gegenteil. Die Schotten sind überaus
+                Gastfreundlich und freuen sich wirklich von Herzen, wenn sich jemand ehrlich für Land und Leute
+                interessiert.</p>
+                <p>Möchten Sie weitere Infos, zögern Sie nicht, uns zu kontaktieren.</p>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
